@@ -1,121 +1,102 @@
 body {
-    min-height: 100vh;
+    background: var(--color-bg-main);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family-main);
+    min-height: 100vh;
 }
 
 header {
+    align-items: center;
+    background: var(--color-bg-header);
+    color: var(--color-text-main);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 24px 40px;
-    background: #222;
-    color: #fff;
+    padding: var(--space-lg) var(--space-page-side);
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    color: var(--color-text-main);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-logo);
 }
 
 .menu {
     display: flex;
-    gap: 32px;
+    gap: var(--space-xl);
 }
 
 .menu a {
-    color: #fff;
+    color: var(--color-text-link);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
     transition: color 0.2s;
 }
 
 .menu a:hover {
-    color: #c0b88c;
+    color: var(--color-text-link-hover);
+    text-shadow: 0 0 2px var(--color-accent-2);
 }
 
+.menu a:active {
+    color: var(--color-text-link-active);
+}
+
+main {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 0 4vw;
+}
 
 section.gallery-container {
-    flex: 1;
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
+    gap: var(--space-md);
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px 0;
+    max-width: var(--max-width-gallery);
+    padding: var(--space-md) 0;
+    width: 100%;
 }
 
-section.gallery-container>div {
-    flex: 0 1 30%;
-    min-width: 200px;
+section.gallery-container > div {
     aspect-ratio: 1/1;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px #0001;
-    background-size: cover;
     background-position: center;
-    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--border-width-card) solid var(--color-card-border);
+    border-radius: var(--border-radius-card);
+    box-shadow: 0 2px 8px var(--color-card-shadow);
+    flex: 0 1 calc(33.33% - var(--space-md));
+    min-width: 200px;
+    width: 100%;
 }
 
-.image1,
-.image2,
-.image3,
-.image4,
-.image5,
-.image6,
-.image7,
-.image8,
-.image9 {
-    border-radius: 8px;
-}
-
-.image1 {
-    background-image: url('../assets/foto1.png');
-}
-
-.image2 {
-    background-image: url('../assets/foto2.png');
-}
-
-.image3 {
-    background-image: url('../assets/foto3.png');
-}
-
-.image4 {
-    background-image: url('../assets/foto4.png');
-}
-
-.image5 {
-    background-image: url('../assets/foto5.png');
-}
-
-.image6 {
-    background-image: url('../assets/foto6.png');
-}
-
-.image7 {
-    background-image: url('../assets/foto7.png');
-}
-
-.image8 {
-    background-image: url('../assets/foto8.png');
-}
-
-.image9 {
-    background-image: url('../assets/foto9.png');
-}
+.image1 { background-image: url('../assets/foto1.png'); }
+.image2 { background-image: url('../assets/foto2.png'); }
+.image3 { background-image: url('../assets/foto3.png'); }
+.image4 { background-image: url('../assets/foto4.png'); }
+.image5 { background-image: url('../assets/foto5.png'); }
+.image6 { background-image: url('../assets/foto6.png'); }
+.image7 { background-image: url('../assets/foto7.png'); }
+.image8 { background-image: url('../assets/foto8.png'); }
+.image9 { background-image: url('../assets/foto9.png'); }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: #222;
-    color: #fff;
-    padding: 16px 0;
+    background: var(--color-bg-footer);
+    bottom: 0;
+    color: var(--color-text-main);
+    display: flex;
+    font-size: var(--font-size-base);
+    justify-content: center;
     min-height: 56px;
-    font-size: 1rem;
+    padding: var(--space-sm) 0;
+    position: fixed;
+    width: 100vw;
 }

@@ -1,75 +1,85 @@
 /* Grid no body para estruturar as áreas principais */
 body {
-    min-height: 100vh;
+    background: var(--color-bg-main);
     display: grid;
+    font-family: var(--font-family-main);
     grid-template-areas:
         "cabecalho"
         "galeria"
         "rodape";
-    grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
-    background: #f7f7f7;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 /* Flexbox no header */
 header {
-    grid-area: cabecalho;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 24px 5vw;
-    background: #222;
-    color: #fff;
+    background: var(--color-bg-header);
+    color: var(--color-text-main);
+    display: flex;
+    grid-area: cabecalho;
+    justify-content: space-between;
+    padding: var(--space-lg) var(--space-page-side);
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    color: var(--color-text-main);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-logo);
 }
 
 .menu {
     display: flex;
-    gap: 32px;
+    gap: var(--space-xl);
 }
 
 .menu a {
-    color: #fff;
+    color: var(--color-text-link);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
     transition: color 0.2s;
 }
+
 .menu a:hover {
-    color: #c0b88c;
+    color: var(--color-text-link-hover);
+    text-shadow: 0 0 2px var(--color-accent-2);
+}
+
+.menu a:active {
+    color: var(--color-text-link-active);
 }
 
 /* Grid no main para galeria de 9 imagens */
 main {
-    grid-area: galeria;
-    padding: 0 4%;
     display: grid;
+    grid-area: galeria;
+    min-height: 60vh;
+    padding: 0 4vw;
     place-items: center;
 }
 
 section.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    width: 100%;
-    padding: 20px 0;
-    justify-items: center;
     align-items: center;
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: var(--max-width-gallery);
+    padding: var(--space-md) 0;
+    width: 100%;
 }
 
 .gallery-container > div {
     aspect-ratio: 1/1;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px #0001;
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--border-width-card) solid var(--color-card-border);
+    border-radius: var(--border-radius-card);
+    box-shadow: 0 2px 8px var(--color-card-shadow);
+    width: 100%;
 }
 
 .image1 { background-image: url('../assets/foto1.png'); }
@@ -84,16 +94,16 @@ section.gallery-container {
 
 /* Flexbox no footer para centralizar conteúdo */
 footer {
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    grid-area: rodape;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: #222;
-    color: #fff;
-    padding: 16px 0;
+    background: var(--color-bg-footer);
+    bottom: 0;
+    color: var(--color-text-main);
+    display: flex;
+    font-size: var(--font-size-base);
+    grid-area: rodape;
+    justify-content: center;
     min-height: 56px;
-    font-size: 1rem;
+    padding: var(--space-sm) 0;
+    position: fixed;
+    width: 100vw;
 }
