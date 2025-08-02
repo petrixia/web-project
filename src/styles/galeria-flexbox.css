@@ -4,21 +4,74 @@ body {
     flex-direction: column;
 }
 
-main {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: #222;
+    color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+section.gallery-container {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
-main img {
-    width: 30%;
+section.gallery-container > div {
+    flex: 0 1 30%;
     min-width: 200px;
     aspect-ratio: 1/1;
-    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 8px #0001;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
 }
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9 {
+    border-radius: 8px;
+}
+
+.image1 { background-image: url('../assets/foto1.png'); }
+.image2 { background-image: url('../assets/foto2.png'); }
+.image3 { background-image: url('../assets/foto3.png'); }
+.image4 { background-image: url('../assets/foto4.png'); }
+.image5 { background-image: url('../assets/foto5.png'); }
+.image6 { background-image: url('../assets/foto6.png'); }
+.image7 { background-image: url('../assets/foto7.png'); }
+.image8 { background-image: url('../assets/foto8.png'); }
+.image9 { background-image: url('../assets/foto9.png'); }

@@ -9,13 +9,23 @@ body {
 }
 
 header {
-    grid-area: cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
     background: #222;
     color: #fff;
-    padding: 24px 40px;
-    text-align: left;
 }
 
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
 main {
     grid-area: conteudo;
     display: grid;
