@@ -1,0 +1,57 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-area: cabecalho;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 24px 40px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+main {
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    place-items: center;
+}
+
+main img {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+}
+
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    padding: 16px 0;
+}
