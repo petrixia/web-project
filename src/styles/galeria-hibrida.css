@@ -1,52 +1,92 @@
+/* Grid no body para estruturar as áreas principais */
 body {
     min-height: 100vh;
     display: grid;
     grid-template-areas:
         "cabecalho"
-        "conteudo"
+        "galeria"
         "rodape";
     grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    background: #f7f7f7;
 }
 
+/* Flexbox no header */
 header {
     grid-area: cabecalho;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px 5vw;
     background: #222;
     color: #fff;
-    padding: 24px 40px;
 }
 
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 .menu {
     display: flex;
-    gap: 24px;
+    gap: 32px;
 }
 
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.menu a:hover {
+    color: #c0b88c;
+}
+
+/* Grid no main para galeria de 9 imagens */
 main {
-    grid-area: conteudo;
+    grid-area: galeria;
+    padding: 0 4%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 40px;
     place-items: center;
 }
 
-main img {
+section.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     width: 100%;
-    max-width: 250px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px #0001;
+    padding: 20px 0;
+    justify-items: center;
+    align-items: center;
 }
 
+.gallery-container > div {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0001;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image1 { background-image: url('../assets/foto1.png'); }
+.image2 { background-image: url('../assets/foto2.png'); }
+.image3 { background-image: url('../assets/foto3.png'); }
+.image4 { background-image: url('../assets/foto4.png'); }
+.image5 { background-image: url('../assets/foto5.png'); }
+.image6 { background-image: url('../assets/foto6.png'); }
+.image7 { background-image: url('../assets/foto7.png'); }
+.image8 { background-image: url('../assets/foto8.png'); }
+.image9 { background-image: url('../assets/foto9.png'); }
+
+/* Flexbox no footer para centralizar conteúdo */
 footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
     grid-area: rodape;
     display: flex;
     justify-content: center;
@@ -54,4 +94,6 @@ footer {
     background: #222;
     color: #fff;
     padding: 16px 0;
+    min-height: 56px;
+    font-size: 1rem;
 }

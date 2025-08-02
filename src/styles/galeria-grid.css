@@ -3,53 +3,100 @@ body {
     display: grid;
     grid-template-areas:
         "cabecalho"
-        "conteudo"
+        "galeria"
         "rodape";
     grid-template-rows: auto 1fr auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 40px;
-    background: #222;
-    color: #fff;
+    grid-area: cabecalho;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.menu {
-    display: flex;
-    gap: 24px;
-}
 main {
-    grid-area: conteudo;
+    grid-area: galeria;
+    padding: 0 4%;
+    display: grid;
+    place-items: center;
+}
+
+section.gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 40px;
+    width: 100%;
+    padding: 20px 0;
     justify-items: center;
     align-items: center;
 }
 
-main img {
+section.gallery-container>div {
     width: 100%;
-    max-width: 250px;
     aspect-ratio: 1/1;
-    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 2px 8px #0001;
+    background-size: cover;
+    background-position: center;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7,
+.image8,
+.image9 {
+    border-radius: 8px;
+}
+
+.image1 {
+    background-image: url('../assets/foto1.png');
+}
+
+.image2 {
+    background-image: url('../assets/foto2.png');
+}
+
+.image3 {
+    background-image: url('../assets/foto3.png');
+}
+
+.image4 {
+    background-image: url('../assets/foto4.png');
+}
+
+.image5 {
+    background-image: url('../assets/foto5.png');
+}
+
+.image6 {
+    background-image: url('../assets/foto6.png');
+}
+
+.image7 {
+    background-image: url('../assets/foto7.png');
+}
+
+.image8 {
+    background-image: url('../assets/foto8.png');
+}
+
+.image9 {
+    background-image: url('../assets/foto9.png');
 }
 
 footer {
+    bottom: 0;
+    width: 100%;
     grid-area: rodape;
+    padding: 16px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background: #222;
     color: #fff;
-    text-align: center;
     padding: 16px 0;
-    align-self: end;
+    min-height: 56px;
+    font-size: 1rem;
 }
