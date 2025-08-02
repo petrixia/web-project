@@ -1,21 +1,23 @@
 # 🌐 web-project
 
-Bem-vindo ao **web-project**!  
-Este repositório é um projeto web simples, feito com muito carinho usando **HTML** e **CSS**. Se você está procurando um exemplo claro, direto e humano de um site, chegou ao lugar certo! 😄
+Welcome to **web-project**!  
+This repository is a simple web project, crafted with care using **HTML** and **CSS**. If you're looking for a clear, straightforward, and human example of a website, you've come to the right place! 😄
 
-## 🚀 O que é este projeto?
+## 🚀 What is this project?
 
-Este projeto serve como base para sites estáticos: seja um portfólio, página pessoal, landing page ou qualquer outro tipo de site simples que você queira colocar no ar rapidinho.  
-Aqui, o foco é aprender, experimentar e brincar com HTML e CSS sem complicação!
+This project serves as a foundation for static websites: whether it's a portfolio, personal page, landing page, or any other simple site you want to get online quickly.  
+Here, the focus is on learning, experimenting, and having fun with HTML and CSS—no complications!
 
-## 🛠️ Tecnologias Utilizadas
+> **Fun fact:** Over the last few months, I've been playing FragPunk and it's been amazing and addictive! If you like fast-paced games, I highly recommend checking it out.
 
-- **HTML** (66%): a estrutura do site.  
-- **CSS** (34%): o visual, as cores, estilos e animações.
+## 🛠️ Technologies Used
 
-Sem frameworks, sem JavaScript. Só o básico, mas bem feito!
+- **HTML** (66%): the structure of the site.  
+- **CSS** (34%): the visuals, colors, styles, and animations.
 
-## 📁 Estrutura do Projeto
+No frameworks, no JavaScript. Just the basics, but done well!
+
+## 📁 Project Structure
 
 ```
 web-project/
@@ -26,35 +28,35 @@ web-project/
 └── README.md
 ```
 
-> Obs.: Dependendo das suas necessidades, a estrutura pode crescer, mas a ideia é começar simples.
+> Note: Depending on your needs, the structure can grow, but the idea is to start simple.
 
-## 👀 Como usar
+## 👀 How to use
 
-1. **Clone o repositório**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/petrixia/web-project.git
    ```
-2. **Abra o arquivo `index.html`** no seu navegador preferido.
-3. **Edite à vontade!**  
-   Personalize, brinque com o CSS, mude as cores, fontes, imagens...  
-   O projeto é seu para experimentar!
+2. **Open the `index.html` file** in your favorite browser.
+3. **Edit as you wish!**  
+   Customize, play with the CSS, change colors, fonts, images...  
+   The project is yours to experiment with!
 
-## 🎯 Para quem é este projeto?
+## 🎯 Who is this project for?
 
-- Quem está começando a aprender HTML e CSS
-- Devs que querem um template básico para um site estático
-- Pessoas que querem um ponto de partida para projetos pessoais
+- Anyone starting to learn HTML and CSS
+- Devs who want a basic template for a static site
+- People looking for a starting point for personal projects
 
-## 🙋‍♂️ Contribua!
+## 🙋‍♂️ Contribute!
 
-Achou algo que pode melhorar? Quer adicionar uma dica ou exemplo?  
-Fique à vontade para abrir uma issue ou um pull request. Toda ajuda é bem-vinda!
+Found something that could be improved? Want to add a tip or example?  
+Feel free to open an issue or a pull request. All help is welcome!
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sob a licença MIT.  
-Faça bom uso, modifique, compartilhe e, se quiser, dê os créditos! 😉
+This project is under the MIT license.  
+Use it, modify it, share it, and if you want, give credit! 😉
 
 ---
 
-Feito com 💚 por [petrixia](https://github.com/petrixia)
+Made with 💚 by [petrixia](https://github.com/petrixia)
