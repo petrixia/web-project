@@ -47,16 +47,6 @@ section.gallery-container {
     width: 100%;
 }
 
-.image1 { background-image: url('../assets/foto1.png'); }
-.image2 { background-image: url('../assets/foto2.png'); }
-.image3 { background-image: url('../assets/foto3.png'); }
-.image4 { background-image: url('../assets/foto4.png'); }
-.image5 { background-image: url('../assets/foto5.png'); }
-.image6 { background-image: url('../assets/foto6.png'); }
-.image7 { background-image: url('../assets/foto7.png'); }
-.image8 { background-image: url('../assets/foto8.png'); }
-.image9 { background-image: url('../assets/foto9.png'); }
-
 footer {
     display: flex;
     grid-area: rodape;
