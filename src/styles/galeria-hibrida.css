@@ -1,4 +1,3 @@
-/* Grid no body para estruturar as áreas principais */
 body {
     background: var(--color-bg-main);
     display: grid;
@@ -10,17 +9,35 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    font-size: 1rem;
 }
 
-/* Flexbox no header */
 header {
+    grid-area: cabecalho;
+}
+
+main {
+    grid-area: galeria;
+}
+
+section.gallery-container {
     align-items: center;
-    background: var(--color-bg-header);
+    display: grid;
+    gap: var(--space-md);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    max-width: var(--max-width-gallery);
+    padding: var(--space-md) 0;
     width: 100%;
 }
 
-.gallery-container > div {
+@media (max-width: 600px) {
+  section.gallery-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+  }
+}
+
+.gallery-container>div {
     aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
@@ -28,7 +45,6 @@ header {
     border-radius: var(--border-radius-card);
     box-shadow: 0 2px 8px var(--color-card-shadow);
     width: 100%;
-    min-width: 0;
 }
 
 .image1 { background-image: url('../assets/foto1.png'); }
@@ -41,39 +57,8 @@ header {
 .image8 { background-image: url('../assets/foto8.png'); }
 .image9 { background-image: url('../assets/foto9.png'); }
 
-@media (min-width: 600px) {
-  header {
-    padding: 2rem 8vw;
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 2rem;
-  }
-  .menu {
-    gap: 2rem;
-  }
-  .menu a {
-    font-size: 1.125rem;
-  }
-  section.gallery-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 2rem 0;
-  }
-}
-
-/* Flexbox no footer para centralizar conteúdo */
 footer {
-    align-items: center;
-    background: var(--color-bg-footer);
-    bottom: 0;
-    color: var(--color-text-main);
     display: flex;
-    font-size: var(--font-size-base);
     grid-area: rodape;
     justify-content: center;
-    min-height: 56px;
-    padding: var(--space-sm) 0;
-    position: fixed;
-    width: 100vw;
 }
