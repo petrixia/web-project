@@ -41,7 +41,7 @@ web-project/
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/petrixia/web-project.git
+   git clone https://github.com/criscdev/web-project.git
    ```
 2. **Open `pagina1.html`** in your favorite web browser.
 3. **Customize as you wish!**
@@ -68,7 +68,7 @@ This template works in all modern browsers. For the best experience, use the lat
 ## 🙌 Contributing
 
 Found a bug or have an idea for improvement?  
-Feel free to [open an issue](https://github.com/petrixia/web-project/issues) or submit a pull request!
+Feel free to [open an issue](https://github.com/criscdev/web-project/issues) or submit a pull request!
 
 ---
 
@@ -79,7 +79,7 @@ Use, modify, and share freely—credit is appreciated but not required!
 
 ---
 
-Made with 💚 by [petrixia](https://github.com/petrixia)
+Made with 💚 by [criscdev](https://github.com/criscdev)
 
 ---
 
@@ -127,7 +127,7 @@ web-project/
 
 1. **Clone este repositório:**
    ```bash
-   git clone https://github.com/petrixia/web-project.git
+   git clone https://github.com/criscdev/web-project.git
    ```
 2. **Abra o `pagina1.html`** no seu navegador favorito.
 3. **Personalize como quiser!**
@@ -154,7 +154,7 @@ Este template funciona em todos os navegadores modernos. Para o melhor resultado
 ## 🙌 Contribuindo
 
 Achou um problema ou tem uma ideia de melhoria?  
-Sinta-se à vontade para [abrir uma issue](https://github.com/petrixia/web-project/issues) ou enviar um pull request!
+Sinta-se à vontade para [abrir uma issue](https://github.com/criscdev/web-project/issues) ou enviar um pull request!
 
 ---
 
@@ -165,4 +165,4 @@ Use, modifique e compartilhe à vontade—dar crédito é apreciado, mas não ob
 
 ---
 
-Feito com 💚 por [petrixia](https://github.com/petrixia)
+Feito com 💚 por [criscdev](https://github.com/criscdev)
