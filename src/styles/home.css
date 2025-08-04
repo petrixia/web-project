@@ -1,46 +1,6 @@
 body {
-    background: var(--color-bg-main);
     display: flex;
     flex-direction: column;
-    font-family: var(--font-family-main);
-    min-height: 100vh;
-}
-
-header {
-    align-items: center;
-    background: var(--color-bg-header);
-    color: var(--color-text-main);
-    display: flex;
-    justify-content: space-between;
-    padding: var(--space-lg) var(--space-page-side);
-}
-
-.logo {
-    color: var(--color-text-main);
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--letter-spacing-logo);
-}
-
-.menu {
-    display: flex;
-    gap: var(--space-xl);
-}
-
-.menu a {
-    color: var(--color-text-link);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-normal);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.menu a:hover {
-    color: var(--color-text-link-hover);
-}
-
-.menu a:active {
-    color: var(--color-text-link-active);
 }
 
 main {
@@ -49,8 +9,6 @@ main {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    min-height: 60vh;
-    padding: 0 4vw;
 }
 
 main h2 {
@@ -64,26 +22,4 @@ main p {
     font-size: 1.2rem;
     max-width: 600px;
     text-align: center;
-}
-
-.image1 { background-image: url('../assets/foto1.png'); }
-.image2 { background-image: url('../assets/foto2.png'); }
-.image3 { background-image: url('../assets/foto3.png'); }
-.image4 { background-image: url('../assets/foto4.png'); }
-.image5 { background-image: url('../assets/foto5.png'); }
-.image6 { background-image: url('../assets/foto6.png'); }
-.image7 { background-image: url('../assets/foto7.png'); }
-.image8 { background-image: url('../assets/foto8.png'); }
-.image9 { background-image: url('../assets/foto9.png'); }
-
-footer {
-    align-items: center;
-    background: var(--color-bg-footer);
-    color: var(--color-text-main);
-    display: flex;
-    font-size: var(--font-size-base);
-    justify-content: center;
-    min-height: 56px;
-    padding: var(--space-sm) 0;
-    width: 100vw;
 }

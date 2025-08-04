@@ -1,5 +1,4 @@
 :root {
-    /* Cores */   
     --color-bg-main: #18181b;
     --color-bg-header: #18181b;
     --color-bg-footer: #18181b;
@@ -14,7 +13,6 @@
     --color-card-shadow: #0003;
     --color-card-border: #fff;
 
-    /* Fontes */
     --font-family-main: 'Segoe UI', Arial, sans-serif;
     --font-size-base: 1rem;
     --font-size-lg: 1.5rem;
@@ -23,7 +21,7 @@
     --font-weight-bold: 700;
     --letter-spacing-logo: 1px;
 
-    /* Espaçamentos */
+
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 20px;
@@ -32,12 +30,10 @@
     --space-section: 40px;
     --space-page-side: 5vw;
 
-    /* Bordas e radius */
     --border-radius-card: 12px;
     --border-radius-small: 8px;
     --border-width-card: 2px;
 
-    /* Larguras */
     --max-width-gallery: 1000px;
 }
 
@@ -55,10 +51,10 @@ header {
     align-items: center;
     background: var(--color-bg-header);
     box-sizing: border-box;
-    color: var(--color-text-main);
+    color: var(--color-accent-4);
     display: flex;
     justify-content: space-between;
-    padding: 24px 5vw;
+    padding: var(--space-lg) var(--space-page-side);
     width: 100vw;
 }
 
@@ -71,6 +67,12 @@ header {
 .menu {
     display: flex;
     gap: var(--space-xl);
+}
+
+@media (max-width: 600px) {
+    .menu {
+        gap: var(--space-xs);
+    }
 }
 
 .menu a {
@@ -89,36 +91,35 @@ main {
     box-sizing: border-box;
     display: grid;
     flex: 1;
-    min-height: 60vh;
-    padding: 0 4vw;
+    min-block-size: 60vh;
+    padding: 0 clamp(1rem, 4vw, 3rem) clamp(3.5rem, 8vw, 4.5rem);
     place-items: center;
 }
 
 footer {
     align-items: center;
     background: var(--color-bg-footer);
+    bottom: 0;
     box-sizing: border-box;
     color: var(--color-text-main);
     display: flex;
     font-size: var(--font-size-base);
     justify-content: center;
     min-height: 56px;
-    padding: 16px 0;
+    padding: var(--space-sm) 0;
+    position: fixed;
     width: 100vw;
 }
 
 a {
-    color: inherit;
+    color: var(--color-text-link);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
     transform: scale(0.95);
-}
-
-footer > p > a:hover {
-    color: #c0b88c;
-    text-decoration: underline;
-    transform: scale(0.95);
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: var(--color-text-link-hover);
 }
