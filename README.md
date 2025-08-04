@@ -1,6 +1,7 @@
 # 🌐 web-project
 
 Welcome to **web-project**!  
+
 This repository is a simple web project, crafted with care using **HTML** and **CSS**. If you're looking for a clear example of a website, you've come to the right place! 😄
 
 ## 🚀 What is this project?
