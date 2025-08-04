@@ -10,65 +10,13 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    font-size: 1rem;
 }
 
 /* Flexbox no header */
 header {
     align-items: center;
     background: var(--color-bg-header);
-    color: var(--color-text-main);
-    display: flex;
-    grid-area: cabecalho;
-    justify-content: space-between;
-    padding: var(--space-lg) var(--space-page-side);
-}
-
-.logo {
-    color: var(--color-text-main);
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-bold);
-    letter-spacing: var(--letter-spacing-logo);
-}
-
-.menu {
-    display: flex;
-    gap: var(--space-xl);
-}
-
-.menu a {
-    color: var(--color-text-link);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-normal);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.menu a:hover {
-    color: var(--color-text-link-hover);
-    text-shadow: 0 0 2px var(--color-accent-2);
-}
-
-.menu a:active {
-    color: var(--color-text-link-active);
-}
-
-/* Grid no main para galeria de 9 imagens */
-main {
-    display: grid;
-    grid-area: galeria;
-    min-height: 60vh;
-    padding: 0 4vw;
-    place-items: center;
-}
-
-section.gallery-container {
-    align-items: center;
-    display: grid;
-    gap: var(--space-md);
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    max-width: var(--max-width-gallery);
-    padding: var(--space-md) 0;
     width: 100%;
 }
 
@@ -80,6 +28,7 @@ section.gallery-container {
     border-radius: var(--border-radius-card);
     box-shadow: 0 2px 8px var(--color-card-shadow);
     width: 100%;
+    min-width: 0;
 }
 
 .image1 { background-image: url('../assets/foto1.png'); }
@@ -91,6 +40,27 @@ section.gallery-container {
 .image7 { background-image: url('../assets/foto7.png'); }
 .image8 { background-image: url('../assets/foto8.png'); }
 .image9 { background-image: url('../assets/foto9.png'); }
+
+@media (min-width: 600px) {
+  header {
+    padding: 2rem 8vw;
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .menu {
+    gap: 2rem;
+  }
+  .menu a {
+    font-size: 1.125rem;
+  }
+  section.gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+}
 
 /* Flexbox no footer para centralizar conteúdo */
 footer {

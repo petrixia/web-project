@@ -40,52 +40,20 @@ header {
     text-shadow: 0 0 2px var(--color-accent-2);
 }
 
-.menu a:active {
-    color: var(--color-text-link-active);
-}
-
-main {
-    align-items: flex-start;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    min-height: 60vh;
-    padding: 0 4vw;
-}
-
-section.gallery-container {
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-md);
-    justify-content: center;
-    max-width: var(--max-width-gallery);
-    padding: var(--space-md) 0;
-    width: 100%;
-}
-
-section.gallery-container > div {
-    aspect-ratio: 1/1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: var(--border-width-card) solid var(--color-card-border);
-    border-radius: var(--border-radius-card);
-    box-shadow: 0 2px 8px var(--color-card-shadow);
-    flex: 0 1 calc(33.33% - var(--space-md));
-    min-width: 200px;
-    width: 100%;
-}
-
-.image1 { background-image: url('../assets/foto1.png'); }
-.image2 { background-image: url('../assets/foto2.png'); }
-.image3 { background-image: url('../assets/foto3.png'); }
-.image4 { background-image: url('../assets/foto4.png'); }
-.image5 { background-image: url('../assets/foto5.png'); }
-.image6 { background-image: url('../assets/foto6.png'); }
 .image7 { background-image: url('../assets/foto7.png'); }
 .image8 { background-image: url('../assets/foto8.png'); }
 .image9 { background-image: url('../assets/foto9.png'); }
+
+@media (max-width: 600px) {
+  section.gallery-container {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+  }
+  section.gallery-container > div {
+    min-width: 0;
+    width: 100%;
+  }
+}
 
 footer {
     align-items: center;
