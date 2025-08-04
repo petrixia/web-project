@@ -87,6 +87,15 @@ header {
     color: var(--color-text-link-hover);
 }
 
+em > a {
+    color: var(--color-accent-2);
+}
+
+em > a:hover {
+    color: var(--color-accent-4);
+    font-weight: var(--font-weight-bold);
+}
+
 main {
     box-sizing: border-box;
     display: grid;
