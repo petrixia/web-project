@@ -10,6 +10,7 @@ A clean, minimal template for static websites built with **HTML** and **CSS**. P
 
 This repository provides a solid foundation for static websites. The focus is on learning, experimenting, and mastering HTML and CSS—no frameworks, no JavaScript, just the essentials done right.
 
+![app_gif](/src/assets/atv3.gif)
 ---
 
 ## 🛠️ Technologies Used
@@ -93,6 +94,8 @@ Um template limpo e minimalista para sites estáticos feitos com **HTML** e **CS
 ## 🚀 Visão Geral do Projeto
 
 Este repositório oferece uma base sólida para sites estáticos. O foco é aprender, experimentar e dominar HTML e CSS—sem frameworks, sem JavaScript, só o essencial feito do jeito certo.
+
+![app_gif](/src/assets/atv3.gif)
 
 ---
 
